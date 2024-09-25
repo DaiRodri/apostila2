@@ -1,0 +1,36 @@
+<!--O usuário deve digitar as 4 notas (de 0 a 10) bimestrais e o
+programa deve calcular a média. Após isso, o programa deve
+verificar se a média é maior ou igual a 6.
+Caso afirmativo, exibe na tela uma mensagem informando que o
+aluno foi aprovado, caso contrário, uma mensagem informando que
+ele foi reprovado.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var n1 = Number(prompt(" entre com a primeira nota"))
+        var n2 = Number(prompt(" entre com a segunda nota"))
+        var n3 = Number(prompt(" entre com a terceira nota"))
+        var n4 = Number(prompt(" entre com a quarta nota"))
+        var media = (n1 + n2 + n3 +n4)/4
+
+        if( media >= 6){
+            alert ("aprovado" )
+        }else{
+            alert("reprovado" )
+        }
+
+       
+
+
+    </script>
+    
+</body>
+</html>

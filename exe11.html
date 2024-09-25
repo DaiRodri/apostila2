@@ -1,0 +1,34 @@
+<!--Elabore um programa que efetue o cálculo de um aumento salarial
+respeitando o seguinte critério: se salário for menor ou igual a
+R$500,00, aumento de 15%; se salário for maior que R$500,00 mas
+menor ou igual a R$1.000,00, aumento de 12,5%; se salário for
+maior que R$1.000,00, aumento de 10%.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario = Number(prompt("entre com o salario"))
+        var aumento
+       
+
+        if ( salario <= 500){
+         aumento = salario * 0.15
+            alert ("O aumento do salario será: R$ " + aumento.toFixed(2) )
+        }else if ( salario > 500 && salario <= 1000){
+           aumento = salario * 0.125
+            alert ("O aumento do salario será: R$ " + aumento.toFixed(2))
+
+        }else if (salario > 1000){
+          aumento = salario * 0.10
+            alert ("O aumento do salario será: R$ " + aumento.toFixed(2) )}
+
+    </script>
+    
+</body>
+</html>

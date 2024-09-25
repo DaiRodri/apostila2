@@ -1,0 +1,27 @@
+<!--Vamos simular um caixa eletrônico quando vamos sacar dinheiro. O
+caixa eletrônico verifica-se o valor que desejamos sacar é menor
+que o saldo disponível. Assumiremos que há R$ 1000 de saldo
+disponível para o saque. Se o valor que o usuário quer sacar é
+menor ou igual ao saldo disponível, então o algoritmo permite o
+saque, caso contrário, não.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var saldo = Number(prompt(" entre com o salario" ))
+
+        if ( saldo <= 1000){
+            alert (" voce possui saldo, pode sacar R$:" + saldo.toFixed(2))
+
+        }else {
+            alert("saldo insuficiente, você  não pode sacar " + saldo.toFixed(2) +  " pois possui R$1000 em caixa ")
+        }
+    </script>
+    
+</body>
+</html>
